@@ -1,6 +1,15 @@
-<h1>Editing Todo</h1>
+<div class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-half">
+        <h1 class="title">Edite o seu ToDo</h1>
+        <%= render 'form', todo: @todo %>
+        <br>
+        <%= link_to 'Back', todos_path, class: "button is-info" %>
+      </div>
+    </div>
+  </div>
+</div>
 
-<%= render 'form', todo: @todo %>
 
-<%= link_to 'Show', @todo %> |
-<%= link_to 'Back', todos_path %>
+
