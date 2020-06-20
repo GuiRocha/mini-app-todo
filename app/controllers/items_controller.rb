@@ -5,7 +5,15 @@ class ItemsController < ApplicationController
     @item= @todo.items.create(item_params)
     redirect_to @todo
   end
-
+  def destroy
+    @item = @todo.items.find(params[:id])
+    if @item.destroy
+      flash[:success] = "Todo item was deleted."
+    else
+      flash[:error] = "Todo item could not be deleted."
+    end
+    redirect_to @todo
+  end
   private
   def set_todo
     @todo = Todo.find(params[:todo_id])
