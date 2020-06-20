@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :todos do
     resources :items
     member do
-      patch :done
+      patch :complete
     end
   end
   root "todos#index"
