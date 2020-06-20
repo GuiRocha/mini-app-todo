@@ -1,2 +1,4 @@
 <p><%= item.name %></p>
 <%= link_to "Delete", todo_item_path(@todo, item.id), method: :delete, data: { confirm: "Are you sure?" } %>
+
+<%= link_to "Mark as Complete", todo_item_path(@todo, item.id), method: :patch %>
