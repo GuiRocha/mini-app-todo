@@ -1,54 +1,24 @@
-<!---->
-
-<!--<h1>Todos</h1>-->
-<!--<div class="table-container">-->
-<!--<table class="table">-->
-<!--  <thead>-->
-<!--    <tr>-->
-<!--      <th>Title</th>-->
-<!--      <th>Description</th>-->
-<!--      <th colspan="3"></th>-->
-<!--    </tr>-->
-<!--  </thead>-->
-
-<!--  <tbody>-->
-    <%# @todos.each do |todo| %>
-<!--      <tr>-->
-<!--        <td><%#= todo.title %></td>-->
-<!--        <td><%#= todo.description %></td>-->
-<!--        <td><%#= link_to 'Show', todo %></td>-->
-<!--        <td><%#= link_to '', edit_todo_path(todo), class: "fa fa-pencil" %></td>-->
-<!--        <td><%#= link_to '', todo, method: :delete, data: { confirm: 'Are you sure?' }, class: "fa fa-trash-o" %></td>-->
-<!--      </tr>-->
-    <%# end %>
-<!--  </tbody>-->
-<!--</table>-->
-<!--</div>-->
-<!--<br>-->
 
 
-<!------------------------------------------------->
-<p id="notice"><%= notice %></p>
+
 <div class="columns is-centered">
-<div class="column is-half">
 
+<div class="column is-half">
+  <div class="box">
+    <p id="notice"><%= notice %></p>
   <h1 class="title is-5" style="margin-top: 20px">Feed de ToDos</h1>
 
   <% @todos.each do | todo | %>
-    <div class="box">
-      <article class="media">
-        <div class="media-left">
 
-        </div>
+      <article class="media">
+
         <div class="media-content">
           <div class="content">
             <p><%= todo.title %></p>
-          </div>
-
             <nav class="level">
               <div class="level-left is-mobile">
                 <%= link_to todo, class: "level-item" do %>
-                  <span class="icon"><i class="fa fa-link" aria-hidden="true"></i></span>
+                  <span class="icon"><i class="fa fa-eye" aria-hidden="true"></i></span>
                 <% end %>
                 <%= link_to edit_todo_path(todo), class: "level-item" do %>
                   <span class="icon"><i class="fa fa-pencil" aria-hidden="true"></i></span>
@@ -58,15 +28,10 @@
                 <% end %>
               </div>
             </nav>
-
+          </div>
         </div>
       </article>
-    </div>
-    <button class="button is-info">
-      <%= link_to 'Novo Todo', new_todo_path %>
-    </button>
-    </div>
-
   <% end %>
-
+  </div>
+</div>
 </div>

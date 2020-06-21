@@ -1,23 +1,18 @@
-<div class="row clearfix">
+<div>
   <% if item.completed? %>
-    <div class="complete">
-      <%= link_to "Mark as Complete", todo_item_path(@todo, item.id), method: :patch %>
-    </div>
-    <div class="item">
+    <div>
       <p style="opacity: 0.4;"><strike><%= item.name %></strike></p>
     </div>
-    <div class="trash">
-      <%= link_to "Delete", todo_item_path(@todo, item.id), method: :delete, data: { confirm: "Are you sure?" } %>
+    <div>
+      <%= link_to "", todo_item_path(@todo, item.id), method: :delete, data: { confirm: "Are you sure?" }, class: "fa fa-trash-o" %>
     </div>
   <% else %>
-    <div class="complete">
-      <%= link_to "Mark as Complete", todo_item_path(@todo, item.id), method: :patch %>
-    </div>
-    <div class="item">
+    <div>
       <p><%= item.name %></p>
     </div>
-    <div class="trash">
-      <%= link_to "Delete", todo_item_path(@todo, item.id), method: :delete, data: { confirm: "Are you sure?" } %>
+    <div>
+      <%= link_to "", todo_item_path(@todo, item.id), method: :patch, class: "fa fa-check-circle" %>
+      <%= link_to "", todo_item_path(@todo, item.id), method: :delete, data: { confirm: "Are you sure?" }, class: "fa fa-trash-o" %>
     </div>
   <% end %>
 </div>

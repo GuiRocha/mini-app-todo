@@ -11,17 +11,14 @@
     </div>
   <% end %>
 
-  <div class="field">
-
+  <div>
     <%= form.label :title, class: "label"%>
     <%= form.text_field :title, class: "input is-rounded is-info"  %>
   </div>
 
-  <div class="field">
+  <div>
     <%= form.label :description, class: "label" %>
     <%= form.text_area :description, class: "input is-rounded is-info" %>
   </div>
-  <div class="button is-info">
-    <%= form.submit %>
-  </div>
+    <%= form.submit class: "button is-info"%>
 <% end %>

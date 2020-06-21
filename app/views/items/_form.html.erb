@@ -1,4 +1,5 @@
 <%= form_for([@todo, @todo.items.build]) do |f| %>
-  <%= f.text_field :name, placeholder: "Novo Todo" %>
-  <%= f.submit %>
+  <%= f.text_field :name, placeholder: "Novo Item", class: "input is-rounded is-info"%>
+
+  <%= f.submit class: "button is-info"%>
 <% end %>

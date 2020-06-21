@@ -1,5 +1,9 @@
-<p id="notice"><%= notice %></p>
 
+
+<div class="columns is-centered" style="margin-top: 20px">
+
+<div class="box">
+  <p id="notice"><%= notice %></p>
 <p>
   <strong>Title:</strong>
   <%= @todo.title %>
@@ -9,13 +13,17 @@
   <strong>Description:</strong>
   <%= @todo.description %>
 </p>
-
-<div id="items_wrapper">
+  <br>
+<div >
   <%= render @todo.items %>
-  <div id="form">
+  <div>
     <%= render "items/form" %>
-  </div>
-</div>
 
-<%= link_to 'Edit', edit_todo_path(@todo) %> |
-<%= link_to 'Back', todos_path %>
+  </div>
+
+</div>
+<br>
+<%= link_to 'Edit', edit_todo_path(@todo), class: "button is-info" %>
+<%= link_to 'Back', todos_path, class: "button is-info" %>
+</div>
+</div>
