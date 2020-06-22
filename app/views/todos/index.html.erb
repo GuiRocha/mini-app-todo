@@ -9,7 +9,7 @@
   <h1 class="title is-5" style="margin-top: 20px">Feed de ToDos</h1>
 
   <% @todos.each do | todo | %>
-
+      <% if todo.user == current_user %>
       <article class="media">
 
         <div class="media-content">
@@ -17,20 +17,25 @@
             <p><%= todo.title %></p>
             <nav class="level">
               <div class="level-left is-mobile">
+
                 <%= link_to todo, class: "level-item" do %>
                   <span class="icon"><i class="fa fa-eye" aria-hidden="true"></i></span>
                 <% end %>
                 <%= link_to edit_todo_path(todo), class: "level-item" do %>
                   <span class="icon"><i class="fa fa-pencil" aria-hidden="true"></i></span>
                 <% end %>
+
                 <%= link_to todo, method: :delete, data: { confirm: "Are you sure you want to delete this todo?" } do %>
                   <span class="icon"><i class="fa fa-trash-o" aria-hidden="true"></i></span>
                 <% end %>
+
               </div>
+
             </nav>
           </div>
         </div>
       </article>
+      <% end %>
   <% end %>
   </div>
 </div>

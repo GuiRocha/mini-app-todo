@@ -57,6 +57,7 @@
     <orderEntry type="library" scope="PROVIDED" name="factory_bot (v6.0.2, RVM: ruby-2.7.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="factory_bot_rails (v6.0.0, RVM: ruby-2.7.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="faker (v2.12.0, RVM: ruby-2.7.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ffaker (v2.15.0, RVM: ruby-2.7.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.13.1, RVM: ruby-2.7.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="globalid (v0.4.2, RVM: ruby-2.7.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v1.8.3, RVM: ruby-2.7.0) [gem]" level="application" />
