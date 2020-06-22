@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :todo do
-    title         {FFaker::String}
-    description   {FFaker::String}
+    title         {FFaker::Lorem.word}
+    description   {FFaker::Lorem.word}
     user
   end
 end
