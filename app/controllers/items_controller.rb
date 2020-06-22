@@ -7,6 +7,7 @@ class ItemsController < ApplicationController
     @item= @todo.items.create(item_params)
     redirect_to @todo
   end
+
   def destroy
     @item = @todo.items.find(params[:id])
     if @item.destroy

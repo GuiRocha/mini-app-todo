@@ -26,7 +26,7 @@ gem 'jbuilder', '~> 2.7'
 # gem 'image_processing', '~> 1.2'
 gem 'devise'
 gem 'bulma-rails', '~> 0.8.2'
-
+gem 'factory_bot_rails', '~> 6.0'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
@@ -47,7 +47,6 @@ group :development do
   
 end
 group :test do
-  gem 'factory_bot_rails', '~> 6.0'
   gem 'shoulda-matchers', '~> 4.3'
   gem 'faker'
   gem 'database_cleaner', '~> 1.8', '>= 1.8.5'

@@ -15,22 +15,23 @@ class TodosController < ApplicationController
 
   # GET /todos/new
   def new
-    @todo = Todo.new
+    @todo = current_user.todos.build
   end
 
   # GET /todos/1/edit
   def edit
+
   end
 
   # POST /todos
   # POST /todos.json
   def create
-    @todo = Todo.new(todo_params)
+    @todo = current_user.todos.build(todo_params)
 
     respond_to do |format|
       if @todo.save
         format.html { redirect_to @todo, notice: 'Todo was successfully created.' }
-        format.json { render :show, status: :created, location: @todo }
+        format.json { render :show, status: 200, location: @todo }
       else
         format.html { render :new }
         format.json { render json: @todo.errors, status: :unprocessable_entity }
