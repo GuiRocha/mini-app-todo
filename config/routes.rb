@@ -7,9 +7,6 @@ Rails.application.routes.draw do
     member do
       patch :complete
     end
-    member do
-      patch :add_favorite
-    end
   end
   root "todos#index"
 end
