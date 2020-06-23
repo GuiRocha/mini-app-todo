@@ -8,17 +8,21 @@
   <strong>Title:</strong>
   <%= @todo.title %>
 </p>
-<%= link_to favorite_text, favorites_update_path(todo: @todo), id: 'favorite_link', remote: true %>
-<p>
+
+  <p>
   <strong>Description:</strong>
   <%= @todo.description %>
 </p>
   <br>
 <div >
   <%= render @todo.items %>
+
   <div>
     <%= render "items/form" %>
   </div>
+
+  <br>
+  <p><%= link_to favorite_text, favorites_update_path(todo: @todo), id: 'favorite_link', remote: true, class: 'button is-info' %></p>
 
 </div>
 <br>
