@@ -1,16 +1,18 @@
 class TodosController < ApplicationController
-  before_action :authenticate_user!
+  before_action :authenticate_user!, except: [:index]
   before_action :set_todo, only: [:show, :edit, :update, :destroy]
 
+
   # GET /todos
-  # GET /todos.json
+
   def index
-    @todos = Todo.all
+    @todos = Todo.all.order(id: :desc)
   end
 
   # GET /todos/1
   # GET /todos/1.json
   def show
+    @favorite_exists = Favorite.where(todo: @todo, user: current_user) == [] ? false :true
   end
 
   # GET /todos/new
@@ -62,7 +64,6 @@ class TodosController < ApplicationController
       format.json { head :no_content }
     end
   end
-
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_todo

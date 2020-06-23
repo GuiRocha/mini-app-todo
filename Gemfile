@@ -28,6 +28,7 @@ gem 'devise'
 gem 'bulma-rails', '~> 0.8.2'
 gem 'factory_bot_rails', '~> 6.0'
 gem 'ffaker', '~> 2.15'
+gem 'jquery-rails'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
