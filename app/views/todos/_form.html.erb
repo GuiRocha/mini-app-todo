@@ -20,13 +20,6 @@
     <%= form.label :description, class: "label" %>
     <%= form.text_area :description, class: "input is-rounded is-info" %>
   </div>
-  <tr>
-    <td>
-      <div class="field">
-        <%= form.check_box :public, id: :public_todos %>
-        <%= form.label "Mark as public list" %>
-      </div>
-    </td>
-  </tr>
+
     <%= form.submit class: "button is-info"%>
 <% end %>
