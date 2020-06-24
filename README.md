@@ -18,6 +18,10 @@ A ideia do mini-app é ter um produto funcional, possível de ser usado no dia-a
  -  O usuário logado pode marcar uma lista pública de outro usuário como favorita
  -  O usuário logado pode ver todas as listas que ele marcou como favoritas
  
+ ## Pré-requisitos
+ 
+ `Ruby 2.7.0, Rails 6.0.3`
+ 
  ## Iniciando aplicação
  
  Para isso abra o terminal,faça clone do projeto e entre na pasta do projeto
