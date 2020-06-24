@@ -6,7 +6,8 @@ class TodosController < ApplicationController
 
   def index
     @todos = Todo.all.order(id: :desc)
-  end
+
+  end 
 
   # GET /todos/1
   # GET /todos/1.json

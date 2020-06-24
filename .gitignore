@@ -54,7 +54,7 @@ Removeria app/views/favorites/
 Removeria db/migrate/20200620160227_create_todos.rb
 Removeria spec/factories/items.rb
 Removeria spec/views/
-/tmp/
+!/tmp/
 /tmp/cache/
 /tmp/pids/
 /tmp/sockets/

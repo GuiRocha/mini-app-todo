@@ -17,3 +17,4 @@ require("channels")
 // const imagePath = (name) => images(name, true)
 //= require jquery3
 //= require jquery_ujs
+//= require jquery.turbolinks
