@@ -39,3 +39,26 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+/log/
+/log/.keep
+/log/development.log
+/log/test.log
+Removeria .idea/.generators
+Removeria .idea/workspace.xml
+Removeria .rakeTasks
+Removeria app/assets/stylesheets/favorites.scss
+Removeria app/controllers/favorites_controller.rb
+Removeria app/helpers/favorites_helper.rb
+Removeria app/views/favorites/
+Removeria db/migrate/20200620160227_create_todos.rb
+Removeria spec/factories/items.rb
+Removeria spec/views/
+/tmp/
+/tmp/cache/
+/tmp/pids/
+/tmp/sockets/
+/tmp/storage/
+/tmp/.keep
+/tmp/development_secret.txt
+/tmp/restart.txt
