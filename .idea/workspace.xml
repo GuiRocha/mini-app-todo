@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02461d78-7ff0-40dc-acd2-4f8a850c57b5" name="Default Changelist" comment="corrigindo bug de autenticacao">
-      <change afterPath="$PROJECT_DIR$/spec/features/todo.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/todos/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/todos/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/models/favorite_spec.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/requests/items_spec.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/requests/todos_spec.rb" beforeDir="false" />
+    <list default="true" id="02461d78-7ff0-40dc-acd2-4f8a850c57b5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -423,7 +420,7 @@
       <workItem from="1592668218545" duration="16048000" />
       <workItem from="1592752681990" duration="14836000" />
       <workItem from="1592780503663" duration="34923000" />
-      <workItem from="1593014065766" duration="4391000" />
+      <workItem from="1593014065766" duration="5214000" />
     </task>
     <task id="LOCAL-00001" summary="correção de bugs">
       <created>1592667918452</created>
@@ -586,7 +583,21 @@
       <option name="project" value="LOCAL" />
       <updated>1593017105710</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="todo teste">
+      <created>1593018883613</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1593018883613</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Unversioned Files">
+      <created>1593018929200</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1593018929200</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -617,17 +628,19 @@
     <MESSAGE value="corrigindo bug de autenticacao" />
     <MESSAGE value="ignore" />
     <MESSAGE value="teste login" />
-    <option name="LAST_COMMIT_MESSAGE" value="teste login" />
+    <MESSAGE value="todo teste" />
+    <MESSAGE value="Unversioned Files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Unversioned Files" />
   </component>
   <component name="WindowStateProjectService">
     <state x="393" y="266" width="572" height="269" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1592668147064">
       <screen x="0" y="27" width="1368" height="741" />
     </state>
     <state x="393" y="266" width="572" height="269" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.27.1368.741@0.27.1368.741" timestamp="1592668147064" />
-    <state x="240" y="27" width="1128" height="741" key="CommitChangelistDialog2" timestamp="1593017105375">
+    <state x="240" y="27" width="1128" height="741" key="CommitChangelistDialog2" timestamp="1593018928935">
       <screen x="0" y="27" width="1368" height="741" />
     </state>
-    <state x="240" y="27" width="1128" height="741" key="CommitChangelistDialog2/0.27.1368.741@0.27.1368.741" timestamp="1593017105375" />
+    <state x="240" y="27" width="1128" height="741" key="CommitChangelistDialog2/0.27.1368.741@0.27.1368.741" timestamp="1593018928935" />
     <state x="252" y="86" width="1094" height="629" key="DiffContextDialog" timestamp="1593017084723">
       <screen x="0" y="27" width="1368" height="741" />
     </state>
@@ -672,10 +685,10 @@
       <screen x="0" y="27" width="1368" height="741" />
     </state>
     <state x="150" y="31" width="1067" height="737" key="SettingsEditor/0.27.1368.741@0.27.1368.741" timestamp="1592936638117" />
-    <state x="279" y="132" width="800" height="538" key="Vcs.Push.Dialog.v2" timestamp="1593014394022">
+    <state x="279" y="132" width="800" height="538" key="Vcs.Push.Dialog.v2" timestamp="1593018885592">
       <screen x="0" y="27" width="1368" height="741" />
     </state>
-    <state x="279" y="132" width="800" height="538" key="Vcs.Push.Dialog.v2/0.27.1368.741@0.27.1368.741" timestamp="1593014394022" />
+    <state x="279" y="132" width="800" height="538" key="Vcs.Push.Dialog.v2/0.27.1368.741@0.27.1368.741" timestamp="1593018885592" />
     <state x="447" y="311" width="463" height="179" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592667595367">
       <screen x="0" y="27" width="1368" height="741" />
     </state>
