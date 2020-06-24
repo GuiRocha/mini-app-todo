@@ -40,5 +40,7 @@ A ideia do mini-app é ter um produto funcional, possível de ser usado no dia-a
   
   
   Para rodar os testes rode o seguinte comando
+  `rspec bundle exec`
   
-  `bundle exec rspec`
+  para ver as especificações
+  `rspec -fd`
